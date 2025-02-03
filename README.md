@@ -1,56 +1,61 @@
-# Weather Forecast App
+# Weather Forecast Application
 
 ## Overview
-This is a Python-based Weather Forecast Application that provides real-time weather information and a 5-day forecast for a specified city. It utilizes the OpenWeatherMap API to fetch weather data and displays the results in a user-friendly graphical interface built with Tkinter.
+The Weather Forecast App is a graphical user interface (GUI) application built using Tkinter. It allows users to search for a city and get real-time weather updates, a 5-day forecast, and weather alerts using the OpenWeatherMap API.
 
 ## Features
-- **Search for Weather**: Enter a city name to get current weather conditions.
-- **Real-time Data**: Fetches and displays live temperature, humidity, wind speed, and weather conditions.
-- **5-Day Forecast**: Provides a detailed forecast for the next five days.
-- **Weather Alerts**: Displays important weather alerts (if available).
-- **Responsive UI**: Built with Tkinter and ttk styles for an enhanced user experience.
+- Search for current weather conditions by city name.
+- Display temperature, humidity, wind speed, and weather description.
+- Fetch and show a 5-day weather forecast.
+- Display weather alerts if available.
+- User-friendly interface built with Tkinter and ttk widgets.
 
-## Requirements
-Ensure you have Python installed on your system and install the required dependencies:
+## Technologies Used
+- Python
+- Tkinter (GUI framework)
+- Requests (for API calls)
+- OpenWeatherMap API
 
-```bash
-pip install requests
-```
+## Prerequisites
+- Python 3.x installed
+- Required libraries:
+  ```sh
+  pip install requests
+  ```
+- An API key from [OpenWeatherMap](https://openweathermap.org/api)
 
-## How to Run
-1. Clone or download the project files.
-2. Navigate to the project directory and run:
-   
-   ```bash
+## Installation & Usage
+1. Clone the repository or download the script.
+2. Open the terminal and navigate to the script directory.
+3. Run the script:
+   ```sh
    python weather_app.py
    ```
+4. Enter a city name and click the "Search" button to get weather details.
 
-## Dependencies
-- `tkinter`: GUI framework for building the application interface.
-- `requests`: Library for making API calls to fetch weather data.
-- `datetime`: Used for formatting forecast timestamps.
-- `json`: Parses the API responses.
+## Code Structure
+- **WeatherApp Class:** Manages the GUI components and interactions.
+- **search_weather():** Fetches weather data from OpenWeatherMap API.
+- **update_weather_display():** Updates the UI with fetched weather details.
+- **main():** Initializes and runs the Tkinter application.
 
 ## API Usage
-This application uses the OpenWeatherMap API for retrieving weather information. You need an API key to use it. Replace the default API key in the `WeatherApp` class with your own:
-
-```python
-self.api_key = "YOUR_API_KEY_HERE"
-```
-
-## Project Structure
-```
-weather_app.py  # Main application file
-README.md       # Project documentation
-```
+- **Geocoding API**: Converts city names into latitude and longitude.
+- **Weather API**: Retrieves current weather conditions.
+- **Forecast API**: Provides a 5-day weather forecast.
 
 ## Error Handling
-- Displays error messages if the city is not found.
-- Handles API request failures and JSON parsing errors.
-- Ensures smooth UI updates even when data is missing.
+- Handles incorrect city names with appropriate error messages.
+- Displays API request errors and connection failures.
 
-## Future Enhancements
-- Add support for more detailed hourly forecasts.
-- Implement caching to reduce redundant API calls.
-- Enhance UI with better styling and icons.
+## Future Improvements
+- Add more weather details such as sunrise/sunset times.
+- Implement a settings page for unit selection (Celsius/Fahrenheit).
+- Improve UI styling with custom themes.
+
+## Contributing
+If you have a contribution to make, feel free to submit issues or pull requests. PRs are more than welcome!
+
+## Contact
+If you have any queries or feedback drop us a mail [sophiasad1421@gmail.com].
 
