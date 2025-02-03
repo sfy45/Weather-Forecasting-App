@@ -1,15 +1,13 @@
-```markdown project="Weather App" file="README.md"
-...
-```
+Weather Forecasting App
 
-2. Install required packages:
+1. Install required packages:
 
 
 ```shellscript
 pip install requests
 ```
 
-3. Set up your OpenWeather API key:
+2. Set up your OpenWeather API key:
 
 1. Sign up at [OpenWeather](https://openweathermap.org/api)
 2. Get your API key
@@ -32,16 +30,6 @@ python weather_app.py
 3. Press Enter or click the Search button
 4. View the current weather and forecast information
 
-
-## Project Structure
-
-```plaintext
-weather-app/
-│
-├── weather_app.py      # Main application file
-├── README.md          # Project documentation
-└── requirements.txt   # Project dependencies
-```
 
 ## Dependencies
 
@@ -68,10 +56,6 @@ This application uses the following OpenWeather API endpoints:
 5. Open a Pull Request
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Weather data provided by [OpenWeather](https://openweathermap.org/)
@@ -94,17 +78,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For support, please open an issue in the GitHub repository or contact the maintainers.
 
-## Author
-
-Your Name
-
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-
-
-## Screenshots
-
-Add screenshots of your application here to help users understand the interface and features.
 
 ## Troubleshooting
 
@@ -116,12 +89,10 @@ Common issues and their solutions:
 2. Check if the API key is correctly placed in the code
 
 
-
 2. **City Not Found**
 
 1. Verify the city name is spelled correctly
 2. Try adding the country code (e.g., "London,UK")
-
 
 
 3. **No Data Displayed**
@@ -129,8 +100,6 @@ Common issues and their solutions:
 1. Check your internet connection
 2. Verify the API endpoints are accessible
 3. Check the console for error messages
-
-
 
 
 
@@ -144,14 +113,11 @@ Common issues and their solutions:
 
 
 
-
-
 ## Known Issues
 
 - Some cities with same names might show incorrect data
 - Forecast data might be delayed by up to 3 hours
 - GUI might need adjustments on different screen resolutions
-
 
 ## Feedback
 
@@ -166,34 +132,3 @@ If you have any feedback or suggestions, please reach out to us through:
 
 Remember to star ⭐ this repository if you find it helpful!
 
-```plaintext
-
-To use this README:
-
-1. Save it as `README.md` in your project's root directory
-2. Replace placeholders:
-   - `yourusername` with your GitHub username
-   - Update the author section with your information
-   - Add actual screenshots of your application
-   - Update the installation and usage instructions if needed
-   - Add or modify sections based on your specific implementation
-
-3. Optional: Create a LICENSE file if you want to include the MIT license or any other license
-
-4. Create a `requirements.txt` file:
-```txt project="Weather App" file="requirements.txt" type="code"
-requests>=2.31.0
-```
-
-This README provides:
-
-- Clear installation instructions
-- Usage guidelines
-- Project structure
-- Contributing guidelines
-- Troubleshooting tips
-- Future enhancement plans
-- Support information
-
-
-It follows GitHub's best practices and includes all necessary sections for a well-documented project. The formatting will render nicely on GitHub with proper headers, code blocks, and lists.
