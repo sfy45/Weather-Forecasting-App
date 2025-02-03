@@ -1,6 +1,5 @@
 # Weather Forecast Application
 
-## Overview
 The Weather Forecast App is a graphical user interface (GUI) application built using Tkinter. It allows users to search for a city and get real-time weather updates, a 5-day forecast, and weather alerts using the OpenWeatherMap API.
 
 ## Features
