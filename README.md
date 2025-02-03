@@ -1,4 +1,4 @@
-Weather Forecasting App
+# Weather Forecast Application
 
 1. Install required packages:
 
